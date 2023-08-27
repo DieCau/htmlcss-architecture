@@ -27,6 +27,7 @@ h1,
 h2,
 h3 {
   font-weight: 900;
+  line-height: 1.2;
   margin: 1rem 0 4rem 0;
 }
 
@@ -212,4 +213,74 @@ img {
 .slogan p {
     margin: 0;
     line-height: 1;
+}
+
+/* About Us */
+
+.about-us{
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  background-image: url(../img/about-us2.jpg);
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position: bottom center;
+}
+
+@media (min-width:992px){
+  .about-us {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.container-about-us {
+  background-color: var(--white);
+  padding: 5rem;
+}
+
+@media (min-width:992px){
+  .container-about-us {
+    grid-column: 2 / 4;  
+  }
+}
+
+.container-about-us h2,
+.container-about-us p {
+  margin-bottom: 1rem;
+}
+
+/* Model */
+
+.model {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+.container-model {
+  padding: 5rem;
+  background-color: var(--white);
+}
+
+.basic {
+  background-image: url(../img/modelo_basico.jpg);
+}
+
+@media (min-width:768px){
+  .basic {
+    background-position: top right;
+  }
+  .basic .container-model {
+    grid-row: 2 / 3;
+  }
+}
+
+
+
+.premier {
+  background-image: url(../img/modelo_premier.jpg);
+}
+
+.elite {
+  background-image: url(../img/modelo_elite.jpg);
 }
